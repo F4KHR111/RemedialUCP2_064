@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">RemedialUCP2</string>
+
+    <string name="btn_submit">Simpan</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Hapus</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="back">Kembali</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="save_success">Data berhasil disimpan</string>
+    <string name="delete_success">Data berhasil dihapus</string>
+
+    <string name="required_field">Wajib diisi!</string>
+    <string name="deskripsi_no_item">Tidak ada data. Tekan + untuk menambah data</string>
+
+    <string name="entry_buku">Tambah Data Buku</string>
+    <string name="edit_buku">Edit Data Buku</string>
+    <string name="detail_buku">Detail Buku</string>
+
+    <string name="judul_buku">Judul Buku</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="isbn">Nomor ISBN</string>
+    <string name="penulis">Penulis</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+
+    <string name="entry_fisik">Tambah Fisik Buku</string>
+    <string name="id_fisik">ID Fisik / Barcode</string>
+    <string name="kondisi">Kondisi Buku</string>
+    <string name="status_peminjaman">Status Peminjaman</string>
+
+    <string name="status_tersedia">Tersedia</string>
+    <string name="status_dipinjam">Dipinjam</string>
+    <string name="kondisi_baik">Baik</string>
+    <string name="kondisi_rusak">Rusak</string>
+
+    <string name="entry_kategori">Tambah Kategori</string>
+    <string name="nama_kategori">Nama Kategori</string>
+    <string name="deskripsi_kategori">Deskripsi</string>
+    <string name="parent_kategori">Induk Kategori (Opsional)</string>
+
+    <string name="attention">Perhatian</string>
+    <string name="delete_confirm">Apakah Anda yakin ingin menghapus data ini?</string>
+
+    <string name="error_delete_kategori_dipinjam">GAGAL: Kategori tidak dapat dihapus karena masih ada buku yang sedang DIPINJAM di dalamnya.</string>
+
+    <string name="option_delete_kategori">Kategori ini memiliki buku. Apa yang ingin Anda lakukan pada buku di dalamnya?</string>
+    <string name="action_soft_delete_books">Hapus Bukunya Juga</string>
+    <string name="action_uncategorize_books">Ubah jadi 'Tanpa Kategori'</string>
+
 </resources>
