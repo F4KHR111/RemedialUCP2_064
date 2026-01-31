@@ -12,21 +12,19 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface PenulisDao {
 
-    // Ambil semua daftar penulis (misal untuk Dropdown saat input buku)
+    // Ambil semua daftar penulis
     @Query("SELECT * FROM penulis ORDER BY nama ASC")
     fun getAllPenulis(): Flow<List<Penulis>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertPenulis(penulis: Penulis)
 
-    // --- QUERY RELASI (PENTING) ---
 
     // 1. Simpan relasi (Hubungkan Buku ID sekian dengan Penulis ID sekian)
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertRelasiBukuPenulis(crossRef: BukuPenulis)
 
     // 2. Ambil semua penulis untuk Buku tertentu
-    // (Berguna saat menampilkan Detail Buku)
     @Transaction
     @Query("""
         SELECT * FROM penulis 

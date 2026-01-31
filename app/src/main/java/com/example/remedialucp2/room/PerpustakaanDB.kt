@@ -29,7 +29,6 @@ import com.example.remedialucp2.room.entity.Penulis
 )
 abstract class PerpustakaanDatabase : RoomDatabase() {
 
-    // Panggil DAO yang sudah dipisah tadi
     abstract fun bukuDao(): BukuDao
     abstract fun kategoriDao(): KategoriDao
     abstract fun auditDao(): AuditDao

@@ -9,6 +9,6 @@ object DestinasiDetail : DestinasiNavigasi {
     // Argumen untuk membawa ID Buku
     const val bukuId = "bukuId"
 
-    // Route lengkap dengan argumen: "detail_buku/{bukuId}"
+    // Route lengkap dengan argumen
     val routeWithArgs = "$route/{$bukuId}"
 }

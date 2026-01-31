@@ -22,7 +22,7 @@ interface KategoriDao {
     @Query("UPDATE kategori SET isDeleted = 1 WHERE id = :id")
     suspend fun deleteKategori(id: Int)
 
-    // Cek Buku Dipinjam (Penting untuk Soal Remedial!)
+    // Cek Buku Dipinjam
     @Query("""
         SELECT COUNT(*) FROM buku_fisik 
         INNER JOIN buku ON buku_fisik.bukuIndukId = buku.id 

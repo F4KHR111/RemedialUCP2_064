@@ -10,7 +10,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.remedialucp2.data.room.entity.Kategori
+import com.example.remedialucp2.room.entity.Kategori
 import com.example.remedialucp2.viewmodel.KategoriViewModel
 import com.example.remedialucp2.viewmodel.provider.PenyediaViewModel
 
